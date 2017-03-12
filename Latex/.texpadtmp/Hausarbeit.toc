@@ -15,10 +15,11 @@
 \contentsline {subsubsection}{\numberline {3.1.2}Umsetzung und Stand der Technik}{4}{subsubsection.3.1.2}
 \contentsline {subsection}{\numberline {3.2}Bewertung}{5}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Virtual Augmented Reality}{5}{subsection.3.3}
-\contentsline {section}{\numberline {4}Quellenverzeichnis}{5}{section.4}
-\contentsline {section}{\numberline {5}Beispiele}{6}{section.5}
-\contentsline {subsection}{\numberline {5.1}Bilder}{6}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Tabellen}{6}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Auflistung}{7}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Listings}{7}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Tipps}{7}{subsection.5.5}
+\contentsline {section}{\numberline {4}Hypothese und formale Beschreibung}{5}{section.4}
+\contentsline {section}{\numberline {5}Quellenverzeichnis}{6}{section.5}
+\contentsline {section}{\numberline {6}Beispiele}{7}{section.6}
+\contentsline {subsection}{\numberline {6.1}Bilder}{7}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Tabellen}{7}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Auflistung}{8}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Listings}{8}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Tipps}{8}{subsection.6.5}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.11)  12 MAR 2017 13:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.11)  12 MAR 2017 16:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1285,7 +1285,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 196.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 196.
-[1] <Bilder/virtual.png, id=162, 1638.12pt x 2047.65pt>
+[1] <Bilder/virtual.png, id=169, 1638.12pt x 2047.65pt>
 File: Bilder/virtual.png Graphic file (type png)
 
 <use Bilder/virtual.png>
@@ -1406,45 +1406,57 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 225.
  [3]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 225.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 225.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 237.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 237.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 241.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 241.
+<Bilder/augmented.png, id=181, 4047.12pt x 3035.34pt>
+File: Bilder/augmented.png Graphic file (type png)
 
-<Bilder/virtual_augmented.png, id=174, 1881.0275pt x 2366.8425pt>
+<use Bilder/augmented.png>
+Package pdftex.def Info: Bilder/augmented.png used on input line 229.
+(pdftex.def)             Requested size: 318.66948pt x 238.98798pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 231.
+See the caption package documentation for explanation.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 236.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 236.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 248.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 248.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 252.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 252.
+<Bilder/virtual_augmented.png, id=182, 1881.0275pt x 2366.8425pt>
 File: Bilder/virtual_augmented.png Graphic file (type png)
 
 <use Bilder/virtual_augmented.png>
-Package pdftex.def Info: Bilder/virtual_augmented.png used on input line 245.
+Package pdftex.def Info: Bilder/virtual_augmented.png used on input line 256.
 (pdftex.def)             Requested size: 318.66948pt x 400.94942pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 247.
+(caption)                particular \caption on input line 258.
 See the caption package documentation for explanation.
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 265.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 265.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 265.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 265.
+[4 <./Bilder/augmented.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 265.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 265.
+
 (/Users/oliverflum/Documents/HA-MMS/Latex/.texpadtmp/Hausarbeit.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 242--1
-
- []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
-[4]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1473,82 +1485,90 @@ Underfull \hbox (badness 2941) in paragraph at lines 11--17
 www .
  []
 
-)
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 17.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 17.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 17.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 258.
- [5 <./Bilder/virtual_augmented.png>]
+(babel)             in language  on input line 17.
+[5 <./Bilder/virtual_augmented.png>])
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 262.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 262.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 265.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 265.
+(babel)             in language  on input line 276.
+ [6]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 280.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 280.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 283.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 283.
 
-<Bilder/layering-osgi.png, id=195, 464.73625pt x 283.0575pt>
+<Bilder/layering-osgi.png, id=207, 464.73625pt x 283.0575pt>
 File: Bilder/layering-osgi.png Graphic file (type png)
 
 <use Bilder/layering-osgi.png>
-Package pdftex.def Info: Bilder/layering-osgi.png used on input line 271.
+Package pdftex.def Info: Bilder/layering-osgi.png used on input line 289.
 (pdftex.def)             Requested size: 318.66948pt x 194.0962pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 272.
+(caption)                particular \caption on input line 290.
 See the caption package documentation for explanation.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 277.
+(babel)             in language  on input line 295.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 277.
+(babel)             in language  on input line 295.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 299.
+(babel)             in language  on input line 317.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 299.
+(babel)             in language  on input line 317.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 299.
+(babel)             in language  on input line 317.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 299.
-[6 <./Bilder/layering-osgi.png>]
+(babel)             in language  on input line 317.
+[7 <./Bilder/layering-osgi.png>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 299.
+(babel)             in language  on input line 317.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 299.
+(babel)             in language  on input line 317.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 308.
+(babel)             in language  on input line 326.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 308.
+(babel)             in language  on input line 326.
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 312.
+nput line 330.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 325.
+(babel)             in language  on input line 343.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 325.
+(babel)             in language  on input line 343.
 Package acronym Info: Label `acro:OSGi' newly defined as it shall be overridden
 
-although it is yet undefined on input line 328.
+although it is yet undefined on input line 346.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 330.
+(babel)             in language  on input line 348.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 330.
+(babel)             in language  on input line 348.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 330.
+(babel)             in language  on input line 348.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 330.
- [7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 332.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 332.
+(babel)             in language  on input line 348.
+ [8]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 350.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 350.
 
 (/Users/oliverflum/Documents/HA-MMS/Latex/.texpadtmp/Hausarbeit.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 332.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 332.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 350.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 350.
 Package rerunfilecheck Info: File `Hausarbeit.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
 
@@ -1558,13 +1578,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 332.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 350.
  ) 
 Here is how much of TeX's memory you used:
- 14195 strings out of 493013
- 217148 string characters out of 6133343
- 419806 words of memory out of 5000000
- 17439 multiletter control sequences out of 15000+600000
+ 14206 strings out of 493013
+ 217340 string characters out of 6133343
+ 419845 words of memory out of 5000000
+ 17446 multiletter control sequences out of 15000+600000
  22095 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  50i,12n,54p,8848b,1101s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1586,10 +1606,10 @@ texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2016/texm
 f-dist/fonts/type1/public/cm-super/sftt1200.pfb>
 Output written on /Users/oliverflum/Documents/HA-MMS/Latex/.texpadtmp/Hausarbei
-t.pdf (12 pages, 14103731 bytes).
+t.pdf (13 pages, 34814895 bytes).
 PDF statistics:
- 298 PDF objects out of 1000 (max. 8388607)
- 258 compressed objects within 3 object streams
- 56 named destinations out of 1000 (max. 500000)
- 200 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 311 PDF objects out of 1000 (max. 8388607)
+ 269 compressed objects within 3 object streams
+ 59 named destinations out of 1000 (max. 500000)
+ 213 words of extra memory for PDF output out of 10000 (max. 10000000)
 
