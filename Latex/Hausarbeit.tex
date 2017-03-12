@@ -23,8 +23,7 @@
 \usepackage{picinpar}
 \usepackage[subfigure,titles]{tocloft}
 \usepackage[pdfpagelabels=true]{hyperref}
-\usepackage[T1]{fontenc}
-\renewcommand*\familydefault{\sfdefault}
+
 
 \usepackage{listings}
 \lstset{basicstyle=\footnotesize, captionpos=b, breaklines=true, showstringspaces=false, tabsize=2, frame=lines, numbers=left, numberstyle=\tiny, xleftmargin=2em, framexleftmargin=2em}
@@ -265,7 +264,7 @@ Tracking: optisch, magnetisch, Laufzeitbasiert, mechanisch
 \section{Hypothese und formale Beschreibung}
 Ziel des Versuchs soll der Vergleich zwischen einer rein virtuellen, von der physichen Welt unabhängigen und einer mit der phyischen Umwelt kompatibel gestalteten virtuellen Arbeitsumgebung sein.
 Die inkompatibel gestaltete Umgebung wird in Virtual Reality gestaltet. Für die kompatibel gestaltete Umgebung kämen sowohl Augmented Reality, als auch Virtual Augmented Reality in Frage. Da aber die Möglichkeiten der Virtual Augmented Reality erforscht werden sollen, fällt die Wahl auf diese.
-Es gilt herauszufinden, ob eine mit der physischen Umwelt kompatibel Gestaltete Umgebung eine Erleichterung und Verbesserung der Arbeit mit Digitalen Medien bewirkt. Zu diesem Zweck sollen die Probanden einfache Aufgaben an einem virtuellen Arbeitsplatz ausführen. Die Qualität und Effizienz, sowie die subjektive Einschätzung der Probanden soll dann ausgewertet werden.
+Es gilt herauszufinden, ob eine mit der physischen Umwelt kompatibel Gestaltete Umgebung eine Erleichterung und Verbesserung der Arbeit mit Digitalen Medien bewirkt. Zu diesem Zweck sollen die Probanden einfache Aufgaben an einem virtuellen Arbeitsplatz ausführen. Denkbar wäre z.B. das Abschreiben eines Textes oder das übertragen von Tabellen. Dies würde eine bidirektionale Kommunikation zwischen Mensch und Maschine gewähleisten. Die Qualität und Effizienz, sowie die subjektive Einschätzung der Probanden soll dann ausgewertet werden.
 Es bietet sich die Formulierung einer Unterscheidungshypothese an.\\
 \vspace{1em}
 \begin{center}
@@ -275,6 +274,13 @@ Eine mit der physichen Umgebung kompatibel gestaltete virtuelle Arbeitsumgebung 
 \vspace{1em}
 Als Nullhypothese ergibt sich: 'Die Kompatibilät hat bei der Gestaltung einer virtuellen Arbeitsumgebung hat keinen Einfluss auf die Arbeit an digitalen Dokumenten.'\\
 Zur Bewertung der Aufgabenbewältigung sollen die Fehleranzahl und die Bearbeitungsgeschwindigkeit als quantitative Kriterien herangezogen werden. Außerdem soll durch Befragung der subjektive Eindruck der Testpersonen in die Bewertung einfließen.
+Als abhängige Variablen ergeben sich damit die Fehlerzahll, die Bearbeitungszeit sowie das Ergebnis der Befragung.
+Die Abhängige variable ist die Kompatibilität des Systems, d.h. eine binäre variable mit den Optionen physische Objekte abzubilden oder nicht. Es ergibt sich also ein Einfaktorielles Experiment dessen unabhängige Variable zwei Stufen hat.
+% ----------------------------------------------------------------------------------------------------------
+% Experiment
+% ----------------------------------------------------------------------------------------------------------
+\section{Experiment}
+\subsection{Design}
 
 % ----------------------------------------------------------------------------------------------------------
 % Literatur
@@ -283,13 +289,10 @@ Zur Bewertung der Aufgabenbewältigung sollen die Fehleranzahl und die Bearbeitu
 \bibliographystyle{myalpha}
 \bibliography{bibo}
 \pagebreak
-
 % ----------------------------------------------------------------------------------------------------------
 % Beispiel-Elemente
 % ----------------------------------------------------------------------------------------------------------
 \section{Beispiele}
-
-
 \subsection{Bilder}
 Zum Einfügen eines Bildes, siehe Abbildung \ref{fig:osgi}, wird die \textit{minipage}-Umgebung genutzt, da die Bilder so gut positioniert werden können.
 
