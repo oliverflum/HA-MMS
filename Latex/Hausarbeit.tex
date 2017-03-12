@@ -23,6 +23,8 @@
 \usepackage{picinpar}
 \usepackage[subfigure,titles]{tocloft}
 \usepackage[pdfpagelabels=true]{hyperref}
+\usepackage[T1]{fontenc}
+\renewcommand*\familydefault{\sfdefault}
 
 \usepackage{listings}
 \lstset{basicstyle=\footnotesize, captionpos=b, breaklines=true, showstringspaces=false, tabsize=2, frame=lines, numbers=left, numberstyle=\tiny, xleftmargin=2em, framexleftmargin=2em}
@@ -42,6 +44,10 @@
 	pdfnewwindow=true,
 	colorlinks=true,linkcolor=black,citecolor=black,filecolor=magenta,urlcolor=black}
 \pdfinfo{/CreationDate (D:20110620133321)}
+ %% Option 'defaultfam'
+%% only if the base font of the document is to be sans serig
+
+
 
 \begin{document}
 
@@ -122,9 +128,9 @@
 \titlespacing{\section}{0pt}{12pt plus 4pt minus 2pt}{2pt plus 2pt minus 2pt}
 \singlespacing
 \rhead{INHALTSVERZEICHNIS}
-\renewcommand{\contentsname}{II Inhaltsverzeichnis}
+\renewcommand{\contentsname}{I Inhaltsverzeichnis}
 \phantomsection
-\addcontentsline{toc}{section}{\texorpdfstring{II \hspace{0.35em}Inhaltsverzeichnis}{Inhaltsverzeichnis}}
+\addcontentsline{toc}{section}{\texorpdfstring{I \hspace{0.35em}Inhaltsverzeichnis}{Inhaltsverzeichnis}}
 \addtocounter{section}{1}
 \tableofcontents
 \pagebreak
@@ -185,7 +191,19 @@ Dieses Kapitel soll zunächst einen Überblick über die Konzepte der Virtual- u
 \subsubsection{Allgemein}
 Unter Virtual Reality wird die Simulation von Sinneseindrücken mit dem Ziel eine künstliche Welt für den Menschen erlebbar zu machen verstanden. Im Allgemeinen steht dabei vor allem die visuelle Wahrnehmung im Vordergrund. Sekundär werden auch akustische, haptische bzw. taktile und akustische berücksichtigt. Auch Geruchs- und Geschmackssimulation sind Gegenstand der Entwicklung, aber finden eher wenig tatsächliche Anwendung.
 Der Begriff ‚Virtual Reality‘ wurde durch den 1982 erschienen Science-Fiction-Roman ‚The Judas Mandala‘. Ein Gebiet der Forschung war die Virtual Reality bereits wesentlich früher.
-Das Sensorama erlaubte eine nicht interaktive virtuelle Realität bei der den Benutzern die  Betrachtung eines Filmes in stereoskopischer Optik, mit binereuralem Ton und künstlichem Wind und Geruch. Ein konkret ausformulierte Beschreibung von Virtual Reality findet sich erstmals in ‚The Ultimate Display‘ von Ivan Sutherland im Jahr 1965. Bis heute fand die Idee Anklang in Literatur und Film, vom Holodeck in Star Treck bis zur distopischen Zukunft in Matrix.  In der Realität fand Virtual Reality außerhalb der Forschung vor allem Anwendung in der Unterhaltungsindustrie und im militärischen Kontext. Für Privatpersonen als Videospiele in den Arkaden der 90er Jahre und als Attraktion im Format des 4D-Kinos sowie für das Training von Piloten und Fahrern im militärischen, industriellen Kontext.
+Das Sensorama erlaubte eine nicht interaktive virtuelle Realität bei der den Benutzern die  Betrachtung eines Filmes in stereoskopischer Optik, mit binereuralem Ton und künstlichem Wind und Geruch. Ein konkret ausformulierte Beschreibung von Virtual Reality findet sich erstmals in ‚The Ultimate Display‘ von Ivan Sutherland im Jahr 1965.
+
+\begin{minipage}{\linewidth}
+\vspace{1em}
+	\centering
+	\includegraphics[width=0.7\linewidth]{Bilder/virtual.png}
+	\captionof{figure}[virtual-reality]{Skizze des User Interfaces einer VR Applikation\newline
+	Rot: Virtuelle Objekte, Schwarz: Materielle Obkjekte}
+	\label{fig:virtual_reality}
+\vspace{1em}
+\end{minipage}
+
+ Bis heute fand die Idee Anklang in Literatur und Film, vom Holodeck in Star Treck bis zur distopischen Zukunft in Matrix.  In der Realität fand Virtual Reality außerhalb der Forschung vor allem Anwendung in der Unterhaltungsindustrie und im militärischen Kontext. Für Privatpersonen als Videospiele in den Arkaden der 90er Jahre und als Attraktion im Format des 4D-Kinos sowie für das Training von Piloten und Fahrern im militärischen, industriellen Kontext.
 \subsubsection{Umsetzung und Stand der Technik}
 Für die Realisierung der visuellen Stimulation ist die verbreitetste Option das Tragen einer nach außen geschlossenen Brille mit integrierten BIldschirmen, auf denen die virtuelle Welt abgespielt wird. Problematisch ist hierbei, dass das Auge versucht sich auf Objekte zu fixieren, die entfernt erscheinen, wobei tatsächlich alle Objekte gleich weit entfernt sind, was zu unscharfem sehen führen kann. Des weiteren kann eine Dissonanz zwischen gesehener und durch den Vestibularapparat wahrgenommener Bewegung zu Übelkeit führen, was jedoch durch akurates Headtracking minimiert werden kann. 
 Für haptische und taktile Wahrnehmung sind spezielle Handschuhe vorgesehen, die einerseits die Finger- und Handbewegungen messen und andererseits auch Feedback wie Druck oder Vibration geben können. Für die auditive Wahrnehmung ist für die Simulation von räumlichem hören bei bineuralen Aufnahmen ein Stereokopfhörer ausreichend. Allerdings sind auch andere System wie Dolby Surround, DTS oder ähnliches denkbar. 
@@ -215,7 +233,21 @@ Head-Up-Display
 Bewegliche Displays: Handheld Display
 Akustische und Hapitische und andere Darstellung
 
-Tracking: optisch, magnetisch, Laufzeitbasiert, mechanisch   
+Tracking: optisch, magnetisch, Laufzeitbasiert, mechanisch  
+\subsection{Bewertung} 
+% ----------------------------------------------------------------------------------------------------------
+% Virtual Augmented Reality
+% ----------------------------------------------------------------------------------------------------------
+\subsection{Virtual Augmented Reality}
+\begin{minipage}{\linewidth}
+\vspace{1em}
+	\centering
+	\includegraphics[width=0.7\linewidth]{Bilder/virtual_augmented.png}
+	\captionof{figure}[virtual-reality]{Skizze des User Interfaces einer Virtual-Augmented Reality Applikation\newline
+	Rot: Virtuelle Objekte, Schwarz: Materielle Obkjekte, Grün: Virtuelle Abbildungen materieller Objekte}
+	\label{fig:virtual_reality}
+\vspace{1em}
+\end{minipage}
 % ----------------------------------------------------------------------------------------------------------
 % Literatur
 % ----------------------------------------------------------------------------------------------------------
