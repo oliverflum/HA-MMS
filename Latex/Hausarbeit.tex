@@ -21,11 +21,11 @@
 \usepackage{parskip}
 \usepackage[right]{eurosym}
 \usepackage{picinpar}
+\usepackage{cite}
 \usepackage[subfigure,titles]{tocloft}
 \usepackage[pdfpagelabels=true]{hyperref}
-\usepackage[T1]{fontenc}
-\renewcommand*\familydefault{\sfdefault}
 
+\renewcommand{\familydefault}{\sfdefault}
 \usepackage{listings}
 \lstset{basicstyle=\footnotesize, captionpos=b, breaklines=true, showstringspaces=false, tabsize=2, frame=lines, numbers=left, numberstyle=\tiny, xleftmargin=2em, framexleftmargin=2em}
 \makeatletter
@@ -89,15 +89,15 @@
 	\vspace*{1cm}
 	\textbf{Virtual Augmented Reality}\\
 	\vspace*{2cm}
-	
+
 	\vfill
 	\normalsize
 	\newcolumntype{x}[1]{>{\raggedleft\arraybackslash\hspace{0pt}}p{#1}}
 	\begin{tabular}{x{6cm}p{7.5cm}}
-		\rule{0mm}{5ex}\textbf{Autor:} & Florian Kleeblatt (375911)\newline Oliver Flum (377780) \\ 
-		\rule{0mm}{5ex}\textbf{Prüfer:} & Prof. Dr.-Ing. Matthias Rötting\\ 
-		\rule{0mm}{5ex}\textbf{Abgabedatum:} & 19.03.2017\\ 
-	\end{tabular} 
+		\rule{0mm}{5ex}\textbf{Autor:} & Florian Kleeblatt (375911)\newline Oliver Flum (377780) \\
+		\rule{0mm}{5ex}\textbf{Prüfer:} & Prof. Dr.-Ing. Matthias Rötting\\
+		\rule{0mm}{5ex}\textbf{Abgabedatum:} & 19.03.2017\\
+	\end{tabular}
 \end{center}
 \pagebreak
 
@@ -147,12 +147,12 @@
 % Abkürzungen
 % ----------------------------------------------------------------------------------------------------------
 \section{Abkürzungsverzeichnis}
-\begin{acronym}[OSGi] % längste Abkürzung steht in eckigen Klammern
-	\setlength{\itemsep}{-\parsep} % geringerer Zeilenabstand
-	\acro{OSGi}{Open Service Gateway initiative}
+\begin{acronym}[Bash]
+ \acro{VR}{Virtual Reality}
+ \acro{AR}{Augmented Reality}
+ \acro{VAR}{Virtual Augmented Reality}
 \end{acronym}
 \newpage
-
 % ----------------------------------------------------------------------------------------------------------
 % Inhalt
 % ----------------------------------------------------------------------------------------------------------
@@ -189,7 +189,7 @@ Ziel ,des in der Arbeit beschriebenen Versuchs, ist die Beantwortung der Frage, 
 Dieses Kapitel soll zunächst einen Überblick über die Konzepte der Virtual- und Augmented-Reality geben, sowie ein Konzept von deren Vermischung vorstellen. Neben den abstrakten Konzepten werden außerdem einige konkrete Implementierungen vorgestellt.  Um eine Unterscheidung zu ermöglichen, wird auf das Kontinuum von Milgram und Kishino aufgebaut. Es wird dabei der Grad der Realität unterschieden (vgl Abbildung \TODO). Zum einen Ende gibt es die vollkommene Realität und das Gegenteil am anderen Ende ist die vollkommene Virtualität. Im Bereich dazwischen befindet sich die Mixed Reality. Die Virtual Reality liegt im Bereich der Virtualität und die Augmentet Realität ist näher an den Bereich der Realität angelehnt. Vermischte Bereiche wie Augmented-Virtuality befinden sich im Bereich der Mixed-Reality.
 \subsection{Virtual Reality}
 \subsubsection{Allgemein}
-Unter Virtual Reality wird die Simulation von Sinneseindrücken mit dem Ziel eine künstliche Welt für den Menschen erlebbar zu machen verstanden. Im Allgemeinen steht dabei vor allem die visuelle Wahrnehmung im Vordergrund. Sekundär werden auch akustische, haptische bzw. taktile und akustische berücksichtigt. Auch Geruchs- und Geschmackssimulation sind Gegenstand der Entwicklung, aber finden eher wenig tatsächliche Anwendung.
+Unter Virtual Reality (\ac{VR}) wird die Simulation von Sinneseindrücken mit dem Ziel eine künstliche Welt für den Menschen erlebbar zu machen verstanden. Im Allgemeinen steht dabei vor allem die visuelle Wahrnehmung im Vordergrund. Sekundär werden auch akustische, haptische bzw. taktile und akustische berücksichtigt. Auch Geruchs- und Geschmackssimulation sind Gegenstand der Entwicklung, aber finden eher wenig tatsächliche Anwendung.
 Der Begriff ‚Virtual Reality‘ wurde durch den 1982 erschienen Science-Fiction-Roman ‚The Judas Mandala‘. Ein Gebiet der Forschung war die Virtual Reality bereits wesentlich früher.
 Das Sensorama erlaubte eine nicht interaktive virtuelle Realität bei der den Benutzern die  Betrachtung eines Filmes in stereoskopischer Optik, mit binereuralem Ton und künstlichem Wind und Geruch. Ein konkret ausformulierte Beschreibung von Virtual Reality findet sich erstmals in ‚The Ultimate Display‘ von Ivan Sutherland im Jahr 1965.
 
@@ -205,13 +205,13 @@ Das Sensorama erlaubte eine nicht interaktive virtuelle Realität bei der den Be
 
  Bis heute fand die Idee Anklang in Literatur und Film, vom Holodeck in Star Treck bis zur distopischen Zukunft in Matrix.  In der Realität fand Virtual Reality außerhalb der Forschung vor allem Anwendung in der Unterhaltungsindustrie und im militärischen Kontext. Für Privatpersonen als Videospiele in den Arkaden der 90er Jahre und als Attraktion im Format des 4D-Kinos sowie für das Training von Piloten und Fahrern im militärischen, industriellen Kontext.
 \subsubsection{Umsetzung und Stand der Technik}
-Für die Realisierung der visuellen Stimulation ist die verbreitetste Option das Tragen einer nach außen geschlossenen Brille mit integrierten BIldschirmen, auf denen die virtuelle Welt abgespielt wird. Problematisch ist hierbei, dass das Auge versucht sich auf Objekte zu fixieren, die entfernt erscheinen, wobei tatsächlich alle Objekte gleich weit entfernt sind, was zu unscharfem sehen führen kann. Des weiteren kann eine Dissonanz zwischen gesehener und durch den Vestibularapparat wahrgenommener Bewegung zu Übelkeit führen, was jedoch durch akurates Headtracking minimiert werden kann. 
-Für haptische und taktile Wahrnehmung sind spezielle Handschuhe vorgesehen, die einerseits die Finger- und Handbewegungen messen und andererseits auch Feedback wie Druck oder Vibration geben können. Für die auditive Wahrnehmung ist für die Simulation von räumlichem hören bei bineuralen Aufnahmen ein Stereokopfhörer ausreichend. Allerdings sind auch andere System wie Dolby Surround, DTS oder ähnliches denkbar. 
-Die etablierteste Lösung ist momentan das Oculus Rift Headset. Dieses ist mit zwei Bildschirmen ausgestattet, die jeweils mit 1080×1200 Pixel auflösen und ein Sichtfeld 110° (diagonal) bieten, womit die Ränder des Bildschirms nichtmehr sichtbar sind. 
+Für die Realisierung der visuellen Stimulation ist die verbreitetste Option das Tragen einer nach außen geschlossenen Brille mit integrierten BIldschirmen, auf denen die virtuelle Welt abgespielt wird. Problematisch ist hierbei, dass das Auge versucht sich auf Objekte zu fixieren, die entfernt erscheinen, wobei tatsächlich alle Objekte gleich weit entfernt sind, was zu unscharfem sehen führen kann. Des weiteren kann eine Dissonanz zwischen gesehener und durch den Vestibularapparat wahrgenommener Bewegung zu Übelkeit führen, was jedoch durch akurates Headtracking minimiert werden kann.
+Für haptische und taktile Wahrnehmung sind spezielle Handschuhe vorgesehen, die einerseits die Finger- und Handbewegungen messen und andererseits auch Feedback wie Druck oder Vibration geben können. Für die auditive Wahrnehmung ist für die Simulation von räumlichem hören bei bineuralen Aufnahmen ein Stereokopfhörer ausreichend. Allerdings sind auch andere System wie Dolby Surround, DTS oder ähnliches denkbar.
+Die etablierteste Lösung ist momentan das Oculus Rift Headset. Dieses ist mit zwei Bildschirmen ausgestattet, die jeweils mit 1080×1200 Pixel auflösen und ein Sichtfeld 110° (diagonal) bieten, womit die Ränder des Bildschirms nichtmehr sichtbar sind.
 Des weiteren sind Kopfhörer integriert, die ein dreidimensionales Hören ermöglichen.
 Für die Bewegung im virtuellen Raum sind ‚Touch‘ genannte Controller mit Beschleunigungssensoren und Knöpfen und Sticks erhältlich. Hier sind jedoch andere Hersteller, wie z.B. HTC durch die Verwendung von kapazitiven Touch-Sensoren etwas weiter und können auch Fingerbewegungen messen.
 Auch heutzutage steht bei privaten Anwendungen vor allem die Unterhaltungselektronik im Fokus, aber erste professionelle Anwendungen wie z.B. ‚Tilt Brush‘ von Google, das Zeichnen und das erzeugen plastischer Formen im dreidimensionalen Raum erlaubt, nutzen die neuen Interaktionsmöglichkeiten mit VR.
-Weitere Vertreter sind das bereits erwähnte HTC Vive, Sony’s Playstation VR und diverse Smartphone basierende Head-Mounted-Displays sowie Forschung und Ausbildungsorientierte Simulatoren, deren Komplexität und hoher Preis sie aber für gewöhnliche Produktivanwendungen unattraktiv macht. 
+Weitere Vertreter sind das bereits erwähnte HTC Vive, Sony’s Playstation VR und diverse Smartphone basierende Head-Mounted-Displays sowie Forschung und Ausbildungsorientierte Simulatoren, deren Komplexität und hoher Preis sie aber für gewöhnliche Produktivanwendungen unattraktiv macht.
 Für den Versuch ist auf Grund der weiten Verbreitung und Guten Entwicklungsumgebung der Oculus Rift der Vorzug zu gewähren.
 \section{Technik}
 Dieses Kapitel soll zunächst einen Überblick über die Konzepte der Virtual- und Augmented-Reality geben, sowie ein Konzept von deren Vermischung vorstellen. Neben den abstrakten Konzepten werden außerdem einige konkrete Implementierungen vorgestellt.  Um eine Unterscheidung zu ermöglichen, wird auf das Kontinuum von Milgram und Kishino aufgebaut. Es wird dabei der Grad der Realität unterschieden (vgl Abbildung 1). Zum einen Ende gibt es die vollkommene Realität und das Gegenteil am anderen Ende ist die vollkommene Virtualität. Im Bereich dazwischen befindet sich die Mixed Reality. Die Virtual Reality liegt im Bereich der Virtualität und die Augmentet Realität ist näher an den Bereich der Realität angelehnt. Vermischte Bereiche wie Augmented-Virtuality befinden sich im Bereich der Mixed-Reality.
@@ -220,7 +220,7 @@ Dieses Kapitel soll zunächst einen Überblick über die Konzepte der Virtual- u
 % ----------------------------------------------------------------------------------------------------------
 \subsection{Augmented Reality}
 \subsubsection{Allgemein}
-Unter dem Begriff der “Augmented Reality” (kurz: AR) (auch deutsch: erweiterte Realität) wird eine Erweiterung der tatsächlichen, selbstwahrgenommenen Realität durch Zuhilfenahme von virtuellen Elementen durch Technik verstanden.
+Unter dem Begriff der “Augmented Reality” (\ac{AR}) (auch deutsch: erweiterte Realität) wird eine Erweiterung der tatsächlichen, selbstwahrgenommenen Realität durch Zuhilfenahme von virtuellen Elementen durch Technik verstanden.
 Nach Azuma wird dabei “Realität mit der Virtualität kombiniert”. Die Abgrenzung zur virtuellen Realität oder der Nachbildung eines zuvor aufgezeichneten Videos ist die Echtzeiteinblendung und Verarbeitung der Informationen. Dabei ist die AR nach Milgram und Kishino mehr in den Bereich der Realität einzuordnen, dass durch virtuelle Elemente angereichert und eingebettet wird.
 
 \begin{minipage}{\linewidth}
@@ -244,20 +244,23 @@ Head-Up-Display
 Bewegliche Displays: Handheld Display
 Akustische und Hapitische und andere Darstellung
 
-Tracking: optisch, magnetisch, Laufzeitbasiert, mechanisch  
-\subsection{Bewertung} 
+Tracking: optisch, magnetisch, Laufzeitbasiert, mechanisch
+\subsection{Bewertung}
 % ----------------------------------------------------------------------------------------------------------
 % Virtual Augmented Reality
 % ----------------------------------------------------------------------------------------------------------
 \subsection{Virtual Augmented Reality}
+Virtual Augmented Reality (\ac{VAR})
+
 \begin{minipage}{\linewidth}
 \vspace{1em}
 	\centering
 	\includegraphics[width=0.7\linewidth]{Bilder/virtual_augmented.png}
 	\captionof{figure}[virtual-reality]{Skizze des User Interfaces einer Virtual-Augmented Reality Applikation\newline
 	Rot: Virtuelle Objekte, Schwarz: Materielle Obkjekte, Grün: Virtuelle Abbildungen materieller Objekte}
-	\label{fig:virtual_reality}
+	\label{fig:virtual_augmented_reality}
 \vspace{1em}
+
 \end{minipage}
 % ----------------------------------------------------------------------------------------------------------
 % Hypothese und formale Beschreibung
@@ -265,7 +268,26 @@ Tracking: optisch, magnetisch, Laufzeitbasiert, mechanisch
 \section{Hypothese und formale Beschreibung}
 Ziel des Versuchs soll der Vergleich zwischen einer rein virtuellen, von der physichen Welt unabhängigen und einer mit der phyischen Umwelt kompatibel gestalteten virtuellen Arbeitsumgebung sein.
 Die inkompatibel gestaltete Umgebung wird in Virtual Reality gestaltet. Für die kompatibel gestaltete Umgebung kämen sowohl Augmented Reality, als auch Virtual Augmented Reality in Frage. Da aber die Möglichkeiten der Virtual Augmented Reality erforscht werden sollen, fällt die Wahl auf diese.
-Die 
+Es gilt herauszufinden, ob eine mit der physischen Umwelt kompatibel Gestaltete Umgebung eine Erleichterung und Verbesserung der Arbeit mit Digitalen Medien bewirkt. Zu diesem Zweck sollen die Probanden einfache Aufgaben an einem virtuellen Arbeitsplatz ausführen. Denkbar wäre z.B. das Abschreiben eines Textes oder das übertragen von Tabellen. Dies würde eine bidirektionale Kommunikation zwischen Mensch und Maschine gewähleisten. Die Qualität und Effizienz, sowie die subjektive Einschätzung der Probanden soll dann ausgewertet werden.
+Es bietet sich die Formulierung einer Unterscheidungshypothese an.\\
+\vspace{1em}
+\begin{center}
+\textbf{Hypothese:}
+Eine mit der physichen Umgebung kompatibel gestaltete virtuelle Arbeitsumgebung verbessert die Arbeit an digitalen Dokumenten gegenüber einer rein virtuelle Umgebung.
+\end{center}
+\vspace{1em}
+Als Nullhypothese ergibt sich: 'Die Kompatibilät hat bei der Gestaltung einer virtuellen Arbeitsumgebung hat keinen Einfluss auf die Arbeit an digitalen Dokumenten.'\\
+Zur Bewertung der Aufgabenbewältigung sollen die Fehleranzahl und die Bearbeitungsgeschwindigkeit als quantitative Kriterien herangezogen werden. Außerdem soll durch Befragung der subjektive Eindruck der Testpersonen in die Bewertung einfließen.
+Als abhängige Variablen ergeben sich damit die Fehlerzahll, die Bearbeitungszeit sowie das Ergebnis der Befragung.
+Die Abhängige variable ist die Kompatibilität des Systems, d.h. eine binäre variable mit  den Optionen physische Objekte abzubilden oder nicht. Es ergibt sich also ein Einfaktorielles Experiment dessen unabhängige Variable zwei Stufen hat.
+% ----------------------------------------------------------------------------------------------------------
+% Experiment
+% ----------------------------------------------------------------------------------------------------------
+\section{Experiment}
+\subsection{Design}
+Für das Experiment wird eine Gruppe von Probanden in einer virtullen Arbeitsumgebung Daten von einer Quelldatei in eine Zieldatei übertragen. Dabei werden die Quelldaten als Fließtext in einem Fenster ausgegeben und sollen dann per Eingabe auf einer virtuellen Tastatur in der Zieldatei in eine Tabelle geschrieben werden (z.B. Wikipedia-Artikel über ein Land, Tabelle mit Feldern für Bevölkerung Bruttoinlandsprodukt, Fläche, etc.)
+Der eigentliche Gedanke, bei der VAR die Umgebung life in die virtuelle Welt zu projezieren, muss aus Kostengründen zunächst hinten angestellt werden. Es wird im Vorfeld des Versuchs ein Modell des Versuchsraums erstellt. Die Probanden sitzen an einem festen Arbeitsplatz, die Kopfbewegungen werden getrackt und so das Modell an der optischen Achse des Probanden ausgerichtet.
+Um die Eingabe zu Realisieren kann auf einen Leapmotion Kontroller gesetzt werden, für den es bereits Implementierungen von VR-Keyboards gibt \cite{leap-motion}. Zusammen mit einem Oculus Rift Headset
 % ----------------------------------------------------------------------------------------------------------
 % Literatur
 % ----------------------------------------------------------------------------------------------------------
@@ -273,13 +295,10 @@ Die
 \bibliographystyle{myalpha}
 \bibliography{bibo}
 \pagebreak
-
 % ----------------------------------------------------------------------------------------------------------
 % Beispiel-Elemente
 % ----------------------------------------------------------------------------------------------------------
 \section{Beispiele}
-
-
 \subsection{Bilder}
 Zum Einfügen eines Bildes, siehe Abbildung \ref{fig:osgi}, wird die \textit{minipage}-Umgebung genutzt, da die Bilder so gut positioniert werden können.
 
@@ -341,11 +360,10 @@ void loop() {
 \end{lstlisting}
 
 \subsection{Tipps}
-Die Quellen befinden sich in der Datei \textit{bibo.bib}. Ein Buch- und eine Online-Quelle sind beispielhaft eingefügt. [Vgl. \cite{buch}, \cite{online}]
+Die Quellen befinden sich in der Datei \textit{bibo.bib}. Ein Buch- und eine Online-Quelle sind beispielhaft eingefügt. [Vgl. %\cite{buch}, \cite{online}]
 
-Abkürzungen lassen sich natürlich auch nutzen (\ac{OSGi}). Weiter oben im Latex-Code findet sich das Verzeichnis.
+Abkürzungen lassen sich natürlich auch nutzen (). Weiter oben im Latex-Code findet sich das Verzeichnis.
 \pagebreak
 
 
 \end{document}
- 
