@@ -1,6 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2016)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: Hausarbeit.aux
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: /Users/florian/Desktop/TU Berlin/3.Semester/Mensch_Maschine-System/Hausarbeit/HA-MMS/Latex/.texpadtmp/Hausarbeit.aux
 The style file: ../myalpha.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -12,7 +12,7 @@ Warning--entry type for "online" isn't style-file defined
 --line 8 of file ../bibo.bib
 You've used 2 entries,
             4793 wiz_defined-function locations,
-            899 strings with 6519 characters,
+            899 strings with 6723 characters,
 and the built_in function-call counts, 827 in all, are:
 = -- 75
 > -- 16
