@@ -43,9 +43,9 @@
 	pdfkeywords={Hausarbeit},
 	pdfnewwindow=true,
 	colorlinks=true,linkcolor=black,citecolor=black,filecolor=magenta,urlcolor=black}
-\pdfinfo{/CreationDate (D:20110620133321)}
- %% Option 'defaultfam'
-%% only if the base font of the document is to be sans serig
+%\pdfinfo{/CreationDate (D:20110620133321)}
+%% Option 'defaultfam'
+%% only if the base font of the document is to be sans serif
 
 
 
@@ -178,15 +178,14 @@
 % Eimnleitung
 % ----------------------------------------------------------------------------------------------------------
 \section{Einleitung}
-Nach mehreren unausgereiften Versuchen seit den frühen 90er Jahren hat die Virtual Reality in den letzten Jahren eine Renaissance erlebt. Ebenso liegt auch Augmented Reality im Aufwind. Diese neuen Technologien eröffnen neue Möglichkeiten der Interaktion mit digitalen Medien, die die klassische Desktop-Metapher transzendieren.
-Da die momentan verfügbaren Systeme sich hauptsächlich auf Unterhaltungselektronik fokussieren, soll diese Arbeit sich mit potentiellen Anwendungen in einem professionellen Umfeld beschäftigen.
-Obwohl diese Anwendungen vielseitige Betrachtungen wie ablenkungsfreies Arbeiten oder intuitive GUI-Gestaltung erlauben, soll diese Arbeit sich auf die Bewertung von einer zwischen physikalischer Welt und virtuellen Objekten kompatiblen Gestaltung beschränken.
-Ziel ,des in der Arbeit beschriebenen Versuchs, ist die Beantwortung der Frage, ob eine kompatible Gestaltung von Virtual und Augmented Reality Umgebungen eine produktivere Arbeit mit digitalen Dokumenten erlaubt.
+Nach mehreren unausgereiften Versuchen seit den frühen 90er Jahren hat die Virtual Reality in den letzten Jahren eine Renaissance erlebt. Ebenso liegt auch Augmented Reality\ac{AR}im Aufwind. Diese neuen Technologien eröffnen neue Möglichkeiten der Interaktion mit digitalen Medien, die die klassische Desktop-Metapher transzendieren. Da die momentan verfügbaren Systeme sich hauptsächlich auf Unterhaltungselektronik fokussieren, soll diese Arbeit sich mit potentiellen Anwendungen in einem professionellen Umfeld beschäftigen. Obwohl diese Anwendungen vielseitige Betrachtungen wie ablenkungsfreies Arbeiten oder intuitive GUI-Gestaltung erlauben, soll diese Arbeit sich auf die Bewertung von einer zwischen physikalischer Welt und virtuellen Objekten kompatiblen Gestaltung beschränken. Ziel, des in der Arbeit beschriebenen Versuchs, ist die Beantwortung der Frage, ob eine kompatible Gestaltung von Virtual und Augmented Reality Umgebungen eine produktivere Arbeit mit digitalen Dokumenten erlaubt.
 % ----------------------------------------------------------------------------------------------------------
 % Virtual Reality
 % ----------------------------------------------------------------------------------------------------------
 \section{Technik}
-Dieses Kapitel soll zunächst einen Überblick über die Konzepte der Virtual- und Augmented-Reality geben, sowie ein Konzept von deren Vermischung vorstellen. Neben den abstrakten Konzepten werden außerdem einige konkrete Implementierungen vorgestellt.  Um eine Unterscheidung zu ermöglichen, wird auf das Kontinuum von Milgram und Kishino aufgebaut. Es wird dabei der Grad der Realität unterschieden (vgl Abbildung \TODO). Zum einen Ende gibt es die vollkommene Realität und das Gegenteil am anderen Ende ist die vollkommene Virtualität. Im Bereich dazwischen befindet sich die Mixed Reality. Die Virtual Reality liegt im Bereich der Virtualität und die Augmentet Realität ist näher an den Bereich der Realität angelehnt. Vermischte Bereiche wie Augmented-Virtuality befinden sich im Bereich der Mixed-Reality.
+Dieses Kapitel gibt einen Überblick über die Konzepte der Virtual- und Augmented-Reality, sowie ein Vorstellung wie deren Vermischung aussehen kann. Neben den abstrakten Konzepten werden außerdem einige konkrete Implementierungen vorgestellt. Um eine Unterscheidung zu ermöglichen, wird auf das Kontinuum von Milgram und Kishino aufgebaut. Es wird dabei der Grad der Realität unterschieden (vgl Abbildung %TODO Referenzz zu Abbildung einführen
+%TODO Abbildung einfügen
+). Zum einen Ende gibt es die vollkommene Realität und das Gegenteil am anderen Ende ist die vollkommene Virtualität. Im Bereich dazwischen befindet sich die Mixed Reality. Die Virtual Reality liegt im Bereich der Virtualität und die Augmented Realität ist näher an den Bereich der Realität angelehnt. Vermischte Bereiche wie Augmented-Virtuality befinden sich im Bereich der Mixed-Reality.
 \subsection{Virtual Reality}
 \subsubsection{Allgemein}
 Unter Virtual Reality (\ac{VR}) wird die Simulation von Sinneseindrücken mit dem Ziel eine künstliche Welt für den Menschen erlebbar zu machen verstanden. Im Allgemeinen steht dabei vor allem die visuelle Wahrnehmung im Vordergrund. Sekundär werden auch akustische, haptische bzw. taktile und akustische berücksichtigt. Auch Geruchs- und Geschmackssimulation sind Gegenstand der Entwicklung, aber finden eher wenig tatsächliche Anwendung.
@@ -202,26 +201,20 @@ Das Sensorama erlaubte eine nicht interaktive virtuelle Realität bei der den Be
 	\label{fig:virtual_reality}
 \vspace{1em}
 \end{minipage}
-
  Bis heute fand die Idee Anklang in Literatur und Film, vom Holodeck in Star Treck bis zur distopischen Zukunft in Matrix.  In der Realität fand Virtual Reality außerhalb der Forschung vor allem Anwendung in der Unterhaltungsindustrie und im militärischen Kontext. Für Privatpersonen als Videospiele in den Arkaden der 90er Jahre und als Attraktion im Format des 4D-Kinos sowie für das Training von Piloten und Fahrern im militärischen, industriellen Kontext.
 \subsubsection{Umsetzung und Stand der Technik}
-Für die Realisierung der visuellen Stimulation ist die verbreitetste Option das Tragen einer nach außen geschlossenen Brille mit integrierten BIldschirmen, auf denen die virtuelle Welt abgespielt wird. Problematisch ist hierbei, dass das Auge versucht sich auf Objekte zu fixieren, die entfernt erscheinen, wobei tatsächlich alle Objekte gleich weit entfernt sind, was zu unscharfem sehen führen kann. Des weiteren kann eine Dissonanz zwischen gesehener und durch den Vestibularapparat wahrgenommener Bewegung zu Übelkeit führen, was jedoch durch akurates Headtracking minimiert werden kann.
-Für haptische und taktile Wahrnehmung sind spezielle Handschuhe vorgesehen, die einerseits die Finger- und Handbewegungen messen und andererseits auch Feedback wie Druck oder Vibration geben können. Für die auditive Wahrnehmung ist für die Simulation von räumlichem hören bei bineuralen Aufnahmen ein Stereokopfhörer ausreichend. Allerdings sind auch andere System wie Dolby Surround, DTS oder ähnliches denkbar.
-Die etablierteste Lösung ist momentan das Oculus Rift Headset. Dieses ist mit zwei Bildschirmen ausgestattet, die jeweils mit 1080×1200 Pixel auflösen und ein Sichtfeld 110° (diagonal) bieten, womit die Ränder des Bildschirms nichtmehr sichtbar sind.
-Des weiteren sind Kopfhörer integriert, die ein dreidimensionales Hören ermöglichen.
-Für die Bewegung im virtuellen Raum sind ‚Touch‘ genannte Controller mit Beschleunigungssensoren und Knöpfen und Sticks erhältlich. Hier sind jedoch andere Hersteller, wie z.B. HTC durch die Verwendung von kapazitiven Touch-Sensoren etwas weiter und können auch Fingerbewegungen messen.
-Auch heutzutage steht bei privaten Anwendungen vor allem die Unterhaltungselektronik im Fokus, aber erste professionelle Anwendungen wie z.B. ‚Tilt Brush‘ von Google, das Zeichnen und das erzeugen plastischer Formen im dreidimensionalen Raum erlaubt, nutzen die neuen Interaktionsmöglichkeiten mit VR.
-Weitere Vertreter sind das bereits erwähnte HTC Vive, Sony’s Playstation VR und diverse Smartphone basierende Head-Mounted-Displays sowie Forschung und Ausbildungsorientierte Simulatoren, deren Komplexität und hoher Preis sie aber für gewöhnliche Produktivanwendungen unattraktiv macht.
-Für den Versuch ist auf Grund der weiten Verbreitung und Guten Entwicklungsumgebung der Oculus Rift der Vorzug zu gewähren.
-\section{Technik}
-Dieses Kapitel soll zunächst einen Überblick über die Konzepte der Virtual- und Augmented-Reality geben, sowie ein Konzept von deren Vermischung vorstellen. Neben den abstrakten Konzepten werden außerdem einige konkrete Implementierungen vorgestellt.  Um eine Unterscheidung zu ermöglichen, wird auf das Kontinuum von Milgram und Kishino aufgebaut. Es wird dabei der Grad der Realität unterschieden (vgl Abbildung 1). Zum einen Ende gibt es die vollkommene Realität und das Gegenteil am anderen Ende ist die vollkommene Virtualität. Im Bereich dazwischen befindet sich die Mixed Reality. Die Virtual Reality liegt im Bereich der Virtualität und die Augmentet Realität ist näher an den Bereich der Realität angelehnt. Vermischte Bereiche wie Augmented-Virtuality befinden sich im Bereich der Mixed-Reality.
+Für die Realisierung der visuellen Stimulation ist die verbreitetste Option das Tragen einer nach außen geschlossenen Brille mit integrierten Bildschirmen, auf denen die virtuelle Welt abgespielt wird. Problematisch ist hierbei, dass das Auge versucht sich auf Objekte zu fixieren, die entfernt erscheinen, wobei tatsächlich alle Objekte gleich weit entfernt sind, was zu unscharfem sehen führen kann. Des weiteren kann eine Dissonanz zwischen gesehener und durch den Vestibularapparat wahrgenommener Bewegung zu Übelkeit führen, was jedoch durch akurates Headtracking minimiert werden kann. Für haptische und taktile Wahrnehmung sind spezielle Handschuhe vorgesehen, die einerseits die Finger- und Handbewegungen messen und andererseits auch Feedback wie Druck oder Vibration geben können.%TODO Fixen! und die Sonderzeichen rausescapen. Für die auditive Wahrnehmung ist für die Simulation von räumlichem hören bei bineuralen Aufnahmen ein Stereokopfhörer ausreichend. Allerdings sind auch andere System wie Dolby Surround, DTS oder ähnliches denkbar. Die etablierteste Lösung ist momentan das Oculus Rift Headset. Dieses ist mit zwei Bildschirmen ausgestattet, die jeweils mit 1080x1200 Pixel auflösen und ein diagonales Sichtfeld von 110 Grad bieten, womit die Ränder des Bildschirms nichtmehr sichtbar sind. Des Weiteren sind Kopfhörer integriert, die ein dreidimensionales Hören ermöglichen. Für die Bewegung im virtuellen Raum sind ‚Touch‘ genannte Controller mit Beschleunigungssensoren und Knöpfen und Sticks erhältlich. Hier sind jedoch andere Hersteller, wie z.B. HTC durch die Verwendung von kapazitiven Touch-Sensoren etwas weiter und können auch Fingerbewegungen messen. Auch heutzutage steht bei privaten Anwendungen vor allem die Unterhaltungselektronik im Fokus, aber erste professionelle Anwendungen wie z.B. ‚Tilt Brush‘ von Google, das Zeichnen und das erzeugen plastischer Formen im dreidimensionalen Raum erlaubt, nutzen die neuen Interaktionsmöglichkeiten mit VR. Weitere Vertreter sind das bereits erwähnte HTC Vive, Sony’s Playstation VR und diverse Smartphone basierende Head-Mounted-Displays sowie Forschung und Ausbildungsorientierte Simulatoren, deren Komplexität und hoher Preis sie aber für gewöhnliche Produktivanwendungen unattraktiv macht. Für den Versuch ist auf Grund der weiten Verbreitung und Guten Entwicklungsumgebung der Oculus Rift der Vorzug zu gewähren.
 % ----------------------------------------------------------------------------------------------------------
 % Augmented Reality
 % ----------------------------------------------------------------------------------------------------------
 \subsection{Augmented Reality}
 \subsubsection{Allgemein}
-Unter dem Begriff der “Augmented Reality” (\ac{AR}) (auch deutsch: erweiterte Realität) wird eine Erweiterung der tatsächlichen, selbstwahrgenommenen Realität durch Zuhilfenahme von virtuellen Elementen durch Technik verstanden.
-Nach Azuma wird dabei “Realität mit der Virtualität kombiniert”. Die Abgrenzung zur virtuellen Realität oder der Nachbildung eines zuvor aufgezeichneten Videos ist die Echtzeiteinblendung und Verarbeitung der Informationen. Dabei ist die AR nach Milgram und Kishino mehr in den Bereich der Realität einzuordnen, dass durch virtuelle Elemente angereichert und eingebettet wird.
+Unter dem Begriff der “Augmented Reality” (\ac{AR}) (engl.'augmented"~ erweitert, übermäßig'; auch deutsch: erweiterte Realität) wird eine Erweiterung der tatsächlichen, selbstwahrgenommenen Realität durch Zuhilfenahme von virtuellen Elementen durch Technik verstanden. Nach Azuma wird dabei “Realität mit der Virtualität kombiniert”. Die Abgrenzung zur virtuellen Realität oder der Nachbildung eines zuvor aufgezeichneten Videos ist die Echtzeiteinblendung und Verarbeitung der Informationen. Dabei ist die AR nach Milgram und Kishino mehr in den Bereich der Realität einzuordnen, dass durch virtuelle Elemente angereichert und eingebettet wird \cite{Tonnis:2010aa}. Die Virtualität ist nicht nur auf visuelle sondern auf alle Sinneswahrnehmungen möglich, verschränkt sich jedoch meist auf das Visuelle. Weiterhin wird von der AR eine Echtzeitdarstellung bzw. Interaktion erwartet. 
+%TODO Quellen einfügen
+
+	Eine beispielhafte Vorstellung der AR wird in Abbildung \ref{fig:augmented_reality} dargestellt. So können dem Anwender zusätzliche visuelle Informationen zu seinem bisherigen Sichtfeld eingeblendet werden. Diese können dabei an Gegenstände angepasst und entsprechend verzerrt sein. Das heißt sie stehen in Bezug zu den realen Objekten und sind daran angepasst. 
+	Ein weiterer Vorteil durch AR ergibt sich indem auch Informationen, die nicht wahrnehmbar sind, nun darstellbar sind. Zum Beispiel Infrarotstrahlen oder die zeitliche Verschiebung sog. Differenzbilder.
+	
 
 \begin{minipage}{\linewidth}
 \vspace{1em}
@@ -234,6 +227,19 @@ Nach Azuma wird dabei “Realität mit der Virtualität kombiniert”. Die Abgre
 \end{minipage}
 
 \subsubsection{Umsetzung und Stand der Technik}
+Die Vorstellungen der AR und VR aus Film und Fernsehen beeinflussen auch die nachgeahmte Darstellung der Möglichkeiten in der realen Technik. Vorläufer wie 'Terminator'(1984) oder 'Minority Report'(2002) haben die Anwendungsmöglichkeiten der AR gezeigt und es wird versucht diese so umzusetzen.
+
+
+
+AR über Brillen.... 
+Beispielsweise bekommenn Flugzeugpiloten für Militärjets Informationen über Ziel und ihren Flugzustand und weiter Details über ihren Helm eingeblendet und können so bei geringerer Ablenkung interagieren. 
+Das Google Glass Projekt ist eines der bekanntesten Konsumerprodukte ....
+
+
+AR über Displays....
+
+
+
 Notiz: Grob (Darstellung ; Tracking; Eingabe und Interaktion)
 Darstellung:
 Immersionsstufe
