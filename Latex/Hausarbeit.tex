@@ -47,8 +47,6 @@
 %% Option 'defaultfam'
 %% only if the base font of the document is to be sans serif
 
-
-
 \begin{document}
 
 \titlespacing{\section}{0pt}{12pt plus 4pt minus 2pt}{-6pt plus 2pt minus 2pt}
@@ -188,10 +186,6 @@ Nach mehreren unausgereiften Versuchen seit den frühen 90er Jahren hat die Virt
 Dieses Kapitel gibt einen Überblick über die Konzepte der Virtual- und Augmented-Reality, sowie ein Vorstellung wie deren Vermischung aussehen kann. Neben den abstrakten Konzepten werden außerdem einige konkrete Implementierungen vorgestellt. Um eine Unterscheidung zu ermöglichen, wird auf das Kontinuum von Milgram und Kishino aufgebaut. Es wird dabei der Grad der Realität unterschieden (vgl Abbildung %TODO Referenzz zu Abbildung einführen %TODO Abbildung einfügen). 
 Zum einen Ende gibt es die vollkommene Realität und das Gegenteil am anderen Ende ist die vollkommene Virtualität. Im Bereich dazwischen befindet sich die Mixed Reality. Die Virtual Reality liegt im Bereich der Virtualität und die Augmented Realität ist näher an den Bereich der Realität angelehnt. Vermischte Bereiche wie Augmented-Virtuality befinden sich im Bereich der Mixed-Reality.
 \subsection{Virtual Reality}
-\subsubsection{Allgemein}
-Unter Virtual Reality (\ac{VR}) wird die Simulation von Sinneseindrücken mit dem Ziel eine künstliche Welt für den Menschen erlebbar zu machen verstanden. Im Allgemeinen steht dabei vor allem die visuelle Wahrnehmung im Vordergrund. Sekundär werden auch akustische, haptische bzw. taktile und akustische berücksichtigt. Auch Geruchs- und Geschmackssimulation sind Gegenstand der Entwicklung, aber finden eher wenig tatsächliche Anwendung.
-Der Begriff ‚Virtual Reality‘ wurde durch den 1982 erschienen Science-Fiction-Roman ‚The Judas Mandala‘. Ein Gebiet der Forschung war die Virtual Reality bereits wesentlich früher.
-Das Sensorama erlaubte eine nicht interaktive virtuelle Realität bei der den Benutzern die  Betrachtung eines Filmes in stereoskopischer Optik, mit binereuralem Ton und künstlichem Wind und Geruch. Ein konkret ausformulierte Beschreibung von Virtual Reality findet sich erstmals in ‚The Ultimate Display‘ von Ivan Sutherland im Jahr 1965.
 
 \begin{minipage}{\linewidth}
 \vspace{1em}
@@ -202,7 +196,11 @@ Das Sensorama erlaubte eine nicht interaktive virtuelle Realität bei der den Be
 	\label{fig:virtual_reality}
 \vspace{1em}
 \end{minipage}
- Bis heute fand die Idee Anklang in Literatur und Film, vom Holodeck in Star Treck bis zur distopischen Zukunft in Matrix.  In der Realität fand Virtual Reality außerhalb der Forschung vor allem Anwendung in der Unterhaltungsindustrie und im militärischen Kontext. Für Privatpersonen als Videospiele in den Arkaden der 90er Jahre und als Attraktion im Format des 4D-Kinos sowie für das Training von Piloten und Fahrern im militärischen, industriellen Kontext.
+
+\subsubsection{Allgemein}
+Unter Virtual Reality (\ac{VR}) wird die Simulation von Sinneseindrücken mit dem Ziel eine künstliche Welt für den Menschen erlebbar zu machen verstanden. Im Allgemeinen steht dabei vor allem die visuelle Wahrnehmung im Vordergrund. Sekundär werden auch akustische, haptische bzw. taktile und akustische berücksichtigt. Auch Geruchs- und Geschmackssimulation sind Gegenstand der Entwicklung, aber finden eher wenig tatsächliche Anwendung.
+Der Begriff ‚Virtual Reality‘ wurde durch den 1982 erschienen Science-Fiction-Roman ‚The Judas Mandala‘. Ein Gebiet der Forschung war die Virtual Reality bereits wesentlich früher.
+Das Sensorama erlaubte eine nicht interaktive virtuelle Realität bei der den Benutzern die  Betrachtung eines Filmes in stereoskopischer Optik, mit binereuralem Ton und künstlichem Wind und Geruch. Ein konkret ausformulierte Beschreibung von Virtual Reality findet sich erstmals in ‚The Ultimate Display‘ von Ivan Sutherland im Jahr 1965. Bis heute fand die Idee Anklang in Literatur und Film, vom Holodeck in Star Treck bis zur distopischen Zukunft in Matrix.  In der Realität fand Virtual Reality außerhalb der Forschung vor allem Anwendung in der Unterhaltungsindustrie und im militärischen Kontext. Für Privatpersonen als Videospiele in den Arkaden der 90er Jahre und als Attraktion im Format des 4D-Kinos sowie für das Training von Piloten und Fahrern im militärischen, industriellen Kontext.
 \subsubsection{Umsetzung und Stand der Technik}
 Für die Realisierung der visuellen Stimulation ist die verbreitetste Option das Tragen einer nach außen geschlossenen Brille mit integrierten Bildschirmen, auf denen die virtuelle Welt abgespielt wird. Problematisch ist hierbei, dass das Auge versucht sich auf Objekte zu fixieren, die entfernt erscheinen, wobei tatsächlich alle Objekte gleich weit entfernt sind, was zu unscharfem sehen führen kann. Des weiteren kann eine Dissonanz zwischen gesehener und durch den Vestibularapparat wahrgenommener Bewegung zu Übelkeit führen, was jedoch durch akurates Headtracking minimiert werden kann. Für haptische und taktile Wahrnehmung sind spezielle Handschuhe vorgesehen, die einerseits die Finger- und Handbewegungen messen und andererseits auch Feedback wie Druck oder Vibration geben können.
 %TODO Fixen! und die Sonderzeichen rausescapen.
@@ -215,10 +213,9 @@ Für die Realisierung der visuellen Stimulation ist die verbreitetste Option das
 Unter dem Begriff der “Augmented Reality” (\ac{AR}) (engl.'augmented"~ erweitert, übermäßig'; auch deutsch: erweiterte Realität) wird eine Erweiterung der tatsächlichen, selbstwahrgenommenen Realität durch Zuhilfenahme von virtuellen Elementen durch Technik verstanden. Nach Azuma wird dabei “Realität mit der Virtualität kombiniert”. Die Abgrenzung zur virtuellen Realität oder der Nachbildung eines zuvor aufgezeichneten Videos ist die Echtzeiteinblendung und Verarbeitung der Informationen. Dabei ist die AR nach Milgram und Kishino mehr in den Bereich der Realität einzuordnen, dass durch virtuelle Elemente angereichert und eingebettet wird \cite{Tonnis:2010aa}. Die Virtualität ist nicht nur auf visuelle sondern auf alle Sinneswahrnehmungen möglich, verschränkt sich jedoch meist auf das Visuelle. Weiterhin wird von der AR eine Echtzeitdarstellung bzw. Interaktion erwartet. 
 %TODO Quellen einfügen
 
-	Eine beispielhafte Vorstellung der AR wird in Abbildung \ref{fig:augmented_reality} dargestellt. So können dem Anwender zusätzliche visuelle Informationen zu seinem bisherigen Sichtfeld eingeblendet werden. Diese können dabei an Gegenstände angepasst und entsprechend verzerrt sein. Das heißt sie stehen in Bezug zu den realen Objekten und sind daran angepasst. 
-	Ein weiterer Vorteil durch AR ergibt sich indem auch Informationen, die nicht wahrnehmbar sind, nun darstellbar sind. Zum Beispiel Infrarotstrahlen oder die zeitliche Verschiebung sog. Differenzbilder.
+Eine beispielhafte Vorstellung der AR wird in Abbildung \ref{fig:augmented_reality} dargestellt. So können dem Anwender zusätzliche visuelle Informationen zu seinem bisherigen Sichtfeld eingeblendet werden. Diese können dabei an Gegenstände angepasst und entsprechend verzerrt sein. Das heißt sie stehen in Bezug zu den realen Objekten und sind daran angepasst. 
+Ein weiterer Vorteil durch AR ergibt sich indem auch Informationen, die nicht wahrnehmbar sind, nun darstellbar sind. Zum Beispiel Infrarotstrahlen oder die zeitliche Verschiebung sog. Differenzbilder.
 	
-
 \begin{minipage}{\linewidth}
 \vspace{1em}
 	\centering
@@ -245,11 +242,7 @@ Um die Immersion für den Anwender möglichst authentisch zu gestalten, erfolgt 
 % Virtual Augmented Reality
 % ----------------------------------------------------------------------------------------------------------
 \subsection{Virtual Augmented Reality}
-Virtual Augmented Reality (\ac{VAR}) ist ein Begriff der die Mixed-Reality in Verschiebung zur VR begrenzen soll. Die Grundidee ist folgende: Es soll eine rein virtuelle Welt abgebildet werden, die Objekte und Elemente aus der realen Welt nachbildet und mit Texturen versieht. Zusätzlich zum virtuellen Modell der Realität soll die Möglichkeit der Veränderung und der Manipulatur bestehen. \newline
-Nach dem Kontinuum von Milgram und Kishino befindet sich die VAR dabei im Bereich der VR mit Bezügen zur Mixed-Reality. Die Immersion soll maximal werden. Es erfolgt eine Abbildung der Realität mit deren Sinneswahrnehmungen in einer virtuellen Welt. Die Darstellung erfolgt unter anderem über Datenbrillen wie bei der VR. Durch reale Objektbezüge gibt es für den Anwender auch ein Feedback, denn es erfolgt eine haptische Rückmeldung bei der Berührung der Gegenstände. \newline
-Ein spezielles Anwendungsszenario ist die Chirurgie in der Medizin. In \cite{OLMOS:2014aa} wird ein Konzept vorgestellt, dass neue Möglichkeiten bei Operationen anbietet. Durch minimalinvasive Eingriffe bei Operationen oder immer kleinere und feinere Operationsverfahren werden die Möglichkeiten der Anschauung und der Orientierung für das medizinische Personal immer schwieriger, da beispielsweise unter der Haut mir einer Kamera und dem Operationsbesteck gearbeitet wird. Zum einen ist die Orientierung schwierig, zum anderen sind die gelieferten Daten z.B. die einer Infrarotkamera nicht hinreichend. Weiterhin nimmt die Komplexität und der Stress bei den Ausführenden zu. Um diese Probleme zu verbessern soll ein virtuelles Modell des Patienten angefertigt werden, dieses wird am Patienten getracked.Bei der Operation trägt das behandelnde Medizinische Team Datenbrillen oder sieht über einen Bildschirm eine Visualisierung wo sie sich mit dem Behandlungswerkzeug im Körper befinden und was zu behandeln ist. \newline
-Die VAR bietet somit eine Möglichkeit um Ansichten verständlich zu machen, die bisher nicht anschaubar, nicht leicht verständlich oder nur theoretisch nachvollziehbar waren.
-%TODO Bild einfügen
+Virtual Augmented Reality (\ac{VAR}) ist ein Begriff der die Mixed-Reality in Verschiebung zur VR begrenzen soll. Die Grundidee ist folgende: Es soll eine rein virtuelle Welt abgebildet werden, die Objekte und Elemente aus der realen Welt nachbildet und mit Texturen versieht. Zusätzlich zum virtuellen Modell der Realität soll die Möglichkeit der Veränderung und der Manipulatur bestehen.
 
 \begin{minipage}{\linewidth}
 \vspace{1em}
@@ -259,8 +252,13 @@ Die VAR bietet somit eine Möglichkeit um Ansichten verständlich zu machen, die
 	Rot: Virtuelle Objekte, Schwarz: Materielle Obkjekte, Grün: Virtuelle Abbildungen materieller Objekte}
 	\label{fig:virtual_augmented_reality}
 \vspace{1em}
-
 \end{minipage}
+
+Nach dem Kontinuum von Milgram und Kishino befindet sich die VAR dabei im Bereich der VR mit Bezügen zur Mixed-Reality. Die Immersion soll maximal werden. Es erfolgt eine Abbildung der Realität mit deren Sinneswahrnehmungen in einer virtuellen Welt. Die Darstellung erfolgt unter anderem über Datenbrillen wie bei der VR. Durch reale Objektbezüge gibt es für den Anwender auch ein Feedback, denn es erfolgt eine haptische Rückmeldung bei der Berührung der Gegenstände. \newline
+Ein spezielles Anwendungsszenario ist die Chirurgie in der Medizin. In \cite{OLMOS:2014aa} wird ein Konzept vorgestellt, dass neue Möglichkeiten bei Operationen anbietet. Durch minimalinvasive Eingriffe bei Operationen oder immer kleinere und feinere Operationsverfahren werden die Möglichkeiten der Anschauung und der Orientierung für das medizinische Personal immer schwieriger, da beispielsweise unter der Haut mir einer Kamera und dem Operationsbesteck gearbeitet wird. Zum einen ist die Orientierung schwierig, zum anderen sind die gelieferten Daten z.B. die einer Infrarotkamera nicht hinreichend. Weiterhin nimmt die Komplexität und der Stress bei den Ausführenden zu. Um diese Probleme zu verbessern soll ein virtuelles Modell des Patienten angefertigt werden, dieses wird am Patienten getracked.Bei der Operation trägt das behandelnde Medizinische Team Datenbrillen oder sieht über einen Bildschirm eine Visualisierung wo sie sich mit dem Behandlungswerkzeug im Körper befinden und was zu behandeln ist. \newline
+Die VAR bietet somit eine Möglichkeit um Ansichten verständlich zu machen, die bisher nicht anschaubar, nicht leicht verständlich oder nur theoretisch nachvollziehbar waren.
+%TODO Bild einfügen
+
 % ----------------------------------------------------------------------------------------------------------
 % Hypothese und formale Beschreibung
 % ----------------------------------------------------------------------------------------------------------
