@@ -151,6 +151,8 @@
  \acro{VR}{Virtual Reality}
  \acro{AR}{Augmented Reality}
  \acro{VAR}{Virtual Augmented Reality}
+ \acro{HUD}{Head-Up-Display}	
+
 \end{acronym}
 \newpage
 % ----------------------------------------------------------------------------------------------------------
@@ -227,37 +229,26 @@ Unter dem Begriff der “Augmented Reality” (\ac{AR}) (engl.'augmented"~ erwei
 \end{minipage}
 
 \subsubsection{Umsetzung und Stand der Technik}
-Die Vorstellungen der AR und VR aus Film und Fernsehen beeinflussen auch die nachgeahmte Darstellung der Möglichkeiten in der realen Technik. Vorläufer wie 'Terminator'(1984) oder 'Minority Report'(2002) haben die Anwendungsmöglichkeiten der AR gezeigt und es wird versucht diese so umzusetzen.
-
-
-
-AR über Brillen.... 
-Beispielsweise bekommenn Flugzeugpiloten für Militärjets Informationen über Ziel und ihren Flugzustand und weiter Details über ihren Helm eingeblendet und können so bei geringerer Ablenkung interagieren. 
-Das Google Glass Projekt ist eines der bekanntesten Konsumerprodukte ....
-
-
-AR über Displays....
-
-
-
-Notiz: Grob (Darstellung ; Tracking; Eingabe und Interaktion)
-Darstellung:
-Immersionsstufe
-Raumfixiertheit
-Displays
-Head-Mounted-Display
-Head-Up-Display
-Bewegliche Displays: Handheld Display
-Akustische und Hapitische und andere Darstellung
-
-Tracking: optisch, magnetisch, Laufzeitbasiert, mechanisch
+Die Vorstellungen der AR und VR aus Film und Fernsehen beeinflussen auch die nachgeahmte Darstellung der Möglichkeiten in der realen Technik. Vorläufer wie 'Terminator'(1984) oder 'Minority Report'(2002) haben die Anwendungsmöglichkeiten der AR gezeigt und es wird versucht diese so umzusetzen. Dabei sind die Anwendungsfälle vielfältig ausgeprägt.\newline
+Die benötigten Komponenten in der AR unterteilen sich in Hardware und Software, bzw. alternativ in Darstellung, Tracking und Eingabe. Die Softwarekomponente wird über 3D-Rendering-Bibliotheken\footcites{bspw. OpenGL und DirectX} realisiert. Die Hardwarekomponente ist sehr unterschiedlich ausgeprägt.
+AR wird oft über Brillen realisiert. So bekommen beispielsweise Flugzeugpiloten für Militärjets Informationen über Ziel und ihren Flugzustand und weiter Details über ihren Helm eingeblendet und können so bei verminderter Ablenkung interagieren. Dabei wird Zielerfassung und Koordination über AR und einem HUD im Helm realisiert.\cite{Jenkins:2007aa}. In der aktuellen "Lockheed Martin F-35 Lightning II" wird dem Piloten ein sehr immersives Bild vermittelt. Sechs Kameras an Board des Flugzeuges zeichnen alle Blickwinkel des Flugzeuges auf. Diese werden in Echtzeit verarbeitet und dem Piloten im Helm dargestellt. So kann sich der Pilot im Cockpit umschauen und sozusagen "durch das Flugzeug" hindurch schauen \cite{MOYNIHAN:aa}.
+Das Google Glass Projekt ist eines der bekanntesten Consumerprodukte. Dabei werden zusätzliche Informationen über ein Prisma in einem Brillengestell bereitgestellt. Das halbtransparente Display blendet zusätzliche Informationen ein. Über eine eingebaute Kamera können Objekte erkannt und passende Informationen eingeblendet werden. Informationen beziehen sich auf Termine, Kalender, Wetter und andere Events die auch im Smartphone des Nutzers angezeigt werden können. Hier erfolgt eine Erweiterung der Realität, jedoch eine geringe bis keine Immersion im Sinne der Verknüpfung zwischen realen und virtuellen Objekten. 
+Eine andere Möglichkeit zur Integration von AR stellt die Hardwareebene Head-Up-Display (\ac{HUD}) dar. So bieten verschiedene Autohersteller für ihre Fahrzeuge ein HUD an um dem Fahrer mehr Informationen zu Straßenzustand, Navigation oder Gefahren zu eröffnen. Ein Modullieferant dafür ist z.B. Daqri. HUD's bestehen im aus einem Optikmodul und einer Projektionsfläche. Dabei ist die Projektionsfläche meist eine halbtransparente Fläche, die sich im Sichtfeld des Anwenders befindet. Die zusätzliche virtuelle Information wird auf diese Fläche projiziert. 
+Da HUD, AR-Brillen oder andere Techniken sehr speziell im Anwendungsfall sind und sehr teuer sein kann ist eine Darstellung der AR auch über ein Display möglich. Eine preisgünstigste Realisierung der AR Technik erfolgt mittels Display. Vorhandene Displays zum Beispiel in Smartphones reichen dafür aus. Durch weitere vorhandene Sensoren wie Gyroskop, GPS und Front und Rückkamera kann die genaue Lage des Telefons und das Verhältnis zur Person bestimmt werden.\newline
+Um die Immersion für den Anwender möglichst authentisch zu gestalten, erfolgt ein Tracking der Objekte. Die Idee ist die virtuellen Elemente angepasst an die realen Gegenstände zu visualisieren. Dafür muss die Lage des Objekts bekannt sein. Das Tracking erfolgt wahlweise über Stereokameras, Bild- und Mustererkennung, Markertracking oder Inertialtracking \cite{Tonnis:2010aa}.
 \subsection{Bewertung}
+% TODO: Was soll hier bewertet werden? 
+% Ich würde einfach nur ein Fazit am Ende schreiben.
+
 % ----------------------------------------------------------------------------------------------------------
 % Virtual Augmented Reality
 % ----------------------------------------------------------------------------------------------------------
 \subsection{Virtual Augmented Reality}
-Virtual Augmented Reality (\ac{VAR})
-
+Virtual Augmented Reality (\ac{VAR}) ist ein Begriff der die Mixed-Reality in Verschiebung zur VR begrenzen soll. Die Grundidee ist folgende: Es soll eine rein virtuelle Welt abgebildet werden, die Objekte und Elemente aus der realen Welt nachbildet und mit Texturen versieht. Zusätzlich zum virtuellen Modell der Realität soll die Möglichkeit der Veränderung und der Manipulatur bestehen. \newline
+Nach dem Kontinuum von Milgram und Kishino befindet sich die VAR dabei im Bereich der VR mit Bezügen zur Mixed-Reality. Die Immersion soll maximal werden. Es erfolgt eine Abbildung der Realität mit deren Sinneswahrnehmungen in einer virtuellen Welt. Die Darstellung erfolgt unter anderem über Datenbrillen wie bei der VR. Durch reale Objektbezüge gibt es für den Anwender auch ein Feedback, denn es erfolgt eine haptische Rückmeldung bei der Berührung der Gegenstände. \newline
+Ein spezielles Anwendungsszenario ist die Chirurgie in der Medizin. In \cite{OLMOS:2014aa} wird ein Konzept vorgestellt, dass neue Möglichkeiten bei Operationen anbietet. Durch minimalinvasive Eingriffe bei Operationen oder immer kleinere und feinere Operationsverfahren werden die Möglichkeiten der Anschauung und der Orientierung für das medizinische Personal immer schwieriger, da beispielsweise unter der Haut mir einer Kamera und dem Operationsbesteck gearbeitet wird. Zum einen ist die Orientierung schwierig, zum anderen sind die gelieferten Daten z.B. die einer Infrarotkamera nicht hinreichend. Weiterhin nimmt die Komplexität und der Stress bei den Ausführenden zu. Um diese Probleme zu verbessern soll ein virtuelles Modell des Patienten angefertigt werden, dieses wird am Patienten getracked.Bei der Operation trägt das behandelnde Medizinische Team Datenbrillen oder sieht über einen Bildschirm eine Visualisierung wo sie sich mit dem Behandlungswerkzeug im Körper befinden und was zu behandeln ist. \newline
+Die VAR bietet somit eine Möglichkeit um Ansichten verständlich zu machen, die bisher nicht anschaubar, nicht leicht verständlich oder nur theoretisch nachvollziehbar waren.
+%TODO Bild einfügen
 \begin{minipage}{\linewidth}
 \vspace{1em}
 	\centering
